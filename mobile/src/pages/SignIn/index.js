@@ -1,6 +1,20 @@
 import React from 'react';
-import {View} from 'react-native';
+import { Text } from 'react-native';
+
+import Background from '../../components/Background';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 export default function SignIn() {
-  return <View></View>;
+  return (
+    <Background>
+      <Text>SignIn</Text>
+      <Input
+        style={{ marginTop: 30 }}
+        icon="call"
+        placeholder="Digite seu nome"
+      />
+      <Button children="teste" />
+    </Background>
+  );
 }
