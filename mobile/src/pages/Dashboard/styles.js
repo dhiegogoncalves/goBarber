@@ -1,38 +1,18 @@
-import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 
-import Input from '../../components/Input';
-import Button from '../../components/Button';
-
-export const Container = styled.KeyboardAvoidingView.attrs({
-  enabled: Platform.OS === 'ios',
-  behavior: 'padding',
-})`
+export const Container = styled.SafeAreaView`
   flex: 1;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
 `;
 
-export const Form = styled.View`
-  align-self: stretch;
-  margin-top: 50px;
-`;
-
-export const FormInput = styled(Input)`
-  margin-bottom: 10px;
-`;
-
-export const SubmitButton = styled(Button)`
-  margin-top: 5px;
-`;
-
-export const SignLink = styled.TouchableOpacity`
-  margin-top: 20px;
-`;
-
-export const SignLinkText = styled.Text`
+export const Title = styled.Text`
+  font-size: 20px;
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
+  align-self: center;
+  margin-top: 30px;
 `;
+
+export const List = styled.FlatList.attrs({
+  showsVerticalScrollIndicator: false,
+  contentContainerStyle: { padding: 30 },
+})``;
