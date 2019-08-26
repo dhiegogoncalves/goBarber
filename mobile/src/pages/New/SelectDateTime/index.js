@@ -4,20 +4,27 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import api from '../../../services/api';
 import Background from '../../../components/Background';
-import { Container, Providerlist, Provider, Avatar, Name } from './styles';
+import DateInput from '../../../components/DateInput';
+import { Container } from './styles';
 
 export default function SelectDateTime({ navigation }) {
-  const [providers, setProviders] = useState([]);
+  const [date, setDate] = useState(new Date());
 
   useEffect(() => {}, []);
 
-  return <Background></Background>;
+  return (
+    <Background>
+      <Container>
+        <DateInput date={date} onChange={setDate} />
+      </Container>
+    </Background>
+  );
 }
 
 SelectDateTime.navigationOptions = ({ navigation }) => ({
   title: 'Selecione o horário',
   headerLeft: () => (
-    <TouchableOpacity onPress={() => navigation.navigate('SelectProvider')}>
+    <TouchableOpacity onPress={() => navigation.goBack()}>
       <Icon name="chevron-left" size={20} color="#fff" />
     </TouchableOpacity>
   ),
