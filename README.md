@@ -12,9 +12,9 @@ O site foi desenvolvido para o prestador de serviço cadastrar as horas livres e
 
 O aplicativo foi desenvolvido para o cliente escolher o prestador de serviço e gerenciar os agendamentos.
 
-<img src="mobile/print.png" alt="drawing" width="220"/>
-<img src="mobile/print2.png" alt="drawing" width="220"/>
-<img src="mobile/print3.png" alt="drawing" width="220"/>
+<img src="mobile/print.png" alt="drawing" width="225"/>
+<img src="mobile/print2.png" alt="drawing" width="225"/>
+<img src="mobile/print3.png" alt="drawing" width="225"/>
 
 ## Iniciar a aplicacão :checkered_flag:
 
