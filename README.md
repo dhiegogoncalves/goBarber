@@ -1,6 +1,6 @@
 # goBarber
 
-> Este projeto foi desenvolvido para gerenciar prestação de serviços, como salões de beleza, barbeiros e cabeleireiros. Foi utilizado as tecnologias: Node.js + Queue + ReactJS + React Native.
+> Projeto desenvolvido para gerenciar prestação de serviços, como salões de beleza, barbeiros e cabeleireiros. Foi utilizado as tecnologias: Node.js + React + React Native.
 
 ## Site
 
